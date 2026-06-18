@@ -21,33 +21,53 @@
   };
 
   /* ---------- defaults (GANTI ke data asli sebelum produksi) ---------- */
-  var DEFAULTS={
-    wa:"6281234567890",
-    waLink:"https://wa.me/message/LYZPAFHQQRLMK1",
-    waMsg:"Halo Fou Creative, saya tertarik dengan AI Agent Marketing untuk brand saya.",
-    hero:{ headline:"Dari prospek ke closing, *otomatis*.", subhead:"Dua AI: satu mencari calon pelanggan & membuka percakapan secara otomatis, satu menjawab pertanyaan produk sampai closing. Otomatis, 24 jam." },
-    stats:[ {value:"320%",label:"Rata-rata ROI"}, {value:"85%",label:"Kenaikan efisiensi"}, {value:"24/7",label:"Tanpa henti"} ],
-    caseStudy:{ enabled:false, client:"", challenge:"", solution:"", results:[ {value:"",label:""}, {value:"",label:""} ] },
-    portfolio:[
-      {name:"Éclat Garnet",logo:"assets/logos/eclat-garnet.png"},
-      {name:"Oskincare",logo:"assets/logos/oskincare.png"},
-      {name:"Lé Vien",logo:"assets/logos/le-vien.png"},
-      {name:"Lily Petals",logo:"assets/logos/lily-petals.png"},
-      {name:"Baker's Table",logo:"assets/logos/bakerstable.png"},
-      {name:"Palm Beach",logo:"assets/logos/palm-beach.png"},
-      {name:"Cahaya Tour",logo:"assets/logos/cahaya-tour.png"},
-      {name:"Golden Time",logo:"assets/logos/golden-time.png"},
-      {name:"Javel",logo:"assets/logos/javel.png"},
-      {name:"Glory Mini Soccer",logo:"assets/logos/glory-mini-soccer.png"},
-      {name:"Minowear",logo:"assets/logos/minowear.png"},
-      {name:"Yuire",logo:"assets/logos/yuire.png"},
-      {name:"Nybela",logo:"assets/logos/nybela.png"},
-      {name:"Incashback",logo:"assets/logos/incashback.png"},
-      {name:"GK",logo:"assets/logos/gk.png"},
-      {name:"Debodis",logo:"assets/logos/debodis.svg"},
-      {name:"Bondi Clinic",logo:""}
-    ]
-  };
+var DEFAULTS = {
+  wa: "6281234567890",
+  waLink: "https://wa.me/message/LYZPAFHQQRLMK1",
+  waMsg: "Halo Fou Creative, saya tertarik dengan AI Agent Marketing untuk brand saya.",
+  hero: { 
+    headline: "Dari prospek ke closing, *otomatis*.", 
+    subhead: "Dua AI: satu mencari calon pelanggan & membuka percakapan secara otomatis, satu menjawab pertanyaan produk sampai closing. Otomatis, 24 jam." 
+  },
+  stats: [ 
+    {value: "320%", label: "Rata-rata ROI"}, 
+    {value: "85%", label: "Kenaikan efisiensi"}, 
+    {value: "24/7", label: "Tanpa henti"} 
+  ],
+  caseStudy: { 
+    enabled: false, 
+    client: "", 
+    challenge: "", 
+    solution: "", 
+    results: [ 
+      {value: "", label: ""}, 
+      {value: "", label: ""} 
+    ] 
+  },
+  portfolio: [
+    {name: "Baker's Table", logo: "assets/logos/bakerstable.png"},
+    {name: "Cahaya Tour", logo: "assets/logos/cahaya-tour.png"},
+    {name: "Debodis", logo: "assets/logos/debodis.svg"},
+    {name: "Éclat Garnet", logo: "assets/logos/eclat-garnet.png"},
+    {name: "GK", logo: "assets/logos/gk.png"},
+    {name: "Glory Mini Soccer", logo: "assets/logos/glory-mini-soccer.png"},
+    {name: "Golden Time", logo: "assets/logos/golden-time.png"},
+    {name: "Incashback", logo: "assets/logos/incashback.png"},
+    {name: "Javel", logo: "assets/logos/javel.png"},
+    {name: "Kanebo", logo: "assets/logos/kanebo.png"},
+    {name: "Ladreos", logo: "assets/logos/ladreos.png"},
+    {name: "Lé Vien", logo: "assets/logos/le-vien.png"},
+    {name: "Lily Petals", logo: "assets/logos/lily-petals.png"},
+    {name: "Minowear", logo: "assets/logos/minowear.png"},
+    {name: "Nybela", logo: "assets/logos/nybela.png"},
+    {name: "Nybela 1", logo: "assets/logos/nybela1.png"},
+    {name: "Oskincare", logo: "assets/logos/oskincare.png"},
+    {name: "Palm Beach", logo: "assets/logos/palm-beach.png"},
+    {name: "Powds", logo: "assets/logos/powds.png"},
+    {name: "Yuire", logo: "assets/logos/yuire.png"},
+    {name: "Bondi Clinic", logo: ""} // Dipertahankan dari file asli
+  ]
+};
 
   function merge(def,saved){
     if(!saved||typeof saved!=="object") return JSON.parse(JSON.stringify(def));
